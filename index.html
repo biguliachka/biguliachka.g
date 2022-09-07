@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="modal">
+        <p></p>
+        <div class="check-buttons">
+            <input type="button" value="Close" onclick="Close()">
+            <div class="green">
+                <input type="button" value="Check" onclick="Check()">
+            </div>
+        </div>
+    </div>
+    <div class="modal-loser">
+        <p>It's a pity, but you lost</p>
+        <input type="button" value="Close" onclick="Close2()">
+    </div>
+    <div class="modal-winner">
+        <p>Woohoo, well done, you did it!</p>
+        <input type="button" value="Close" onclick="Close2()">
+    </div>
+    <div class="time"><span id="minutes">01</span>:
+        <span id="second">00</span>
+    </div>
+    <div class="buttons">
+        <input type="button" value="Start game!" class="start" onclick="start()">
+        <input type="button" value="Check result" class="check" onclick="checkResult()" disabled>
+        <input type="button" value="New game" class="new" onclick="newGame()">
+    </div>
+    <div class="image">
+        <div class="puzzle">
+
+        </div>
+        <div class="puzzle2">
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square2 " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </div>
+    </div>
+    <div class="modal-container"> </div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

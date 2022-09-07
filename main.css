@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.time {
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="button"] {
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:disabled {
+    background-color:rgba(255, 0, 0, 0.534);
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="button"]:focus {
+    box-shadow: 0 0 5px 3px red;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.puzzle,
+.puzzle2{
+    background-color: rgba(211, 211, 211, 0.596);
+    width: 320px;
+    height: 320px;
+    box-shadow: 0 0 5px 3px gray;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.square,
+.square2 {
+    height: 80px;
+    width: 25%;
+}
+
+.p0 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 0 0;
+}
+
+.p1 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 33% 0;
+}
+
+.p2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 66% 0;
+}
+.p3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 99% 0;
+}
+
+.p4 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 0 33%;
+}
+
+.p5 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 33% 33%;
+}
+
+.p6 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 66% 33%;
+}
+.p7 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 99% 33%;
+}
+.p8 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 0% 66%;
+}
+
+.p9 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 33% 66%;
+}
+.p10 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 66% 66%;
+}
+.p11 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 99% 66%;
+}
+.p12 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 0% 99%;
+}
+
+.p13 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 33% 99%;
+}
+.p14 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 66% 99%;
+}
+.p15 {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img.jpg);
+    background-position: 99% 99%;
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: none;
+}
+
+.modal,
+.modal-loser,
+.modal-winner {
+    text-align: center;
+    background-color: white;
+    width: 550px;
+    height: 150px;
+    position: absolute;
+    margin: 100px auto;
+    border-radius: 3px;
+    display: none;
+    z-index:3;
+}
+
+
+
+p {
+    margin-top: 20px;
+    font-size: 35px;
+    width: 100%;
+    border-top: 2px solid rgba(212, 218, 223, 0.575);
+    border-bottom: 2px solid rgba(212, 218, 223, 0.466);
+    padding: 10px;
+}
+
+
+
+.green input[type="button"] {
+    background-color: green;
+}
+.green input[type="button"]:focus {
+    box-shadow: 0 0 5px 3px green;
+}
+
+.check-buttons{
+display: flex;
+justify-content: center;
+}
